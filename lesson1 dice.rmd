@@ -13,13 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 First install some packages. It may be worth creating a source, script, with frequently used packages in the future but until that time manually install what you need first
 
-```{r}
+```{r, include=FALSE}
 library(tidyverse)
 library(here)
 
 ```
 
-Creating a dice starting with a vector of numbers (1:6)
+Creating a dice starting with a vector of numbers (1:6) 
 
 ```{r}
 die <- 1:6
