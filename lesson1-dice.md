@@ -7,19 +7,6 @@ First install some packages. It may be worth creating a source, script,
 with frequently used packages in the future but until that time manually
 install what you need first
 
-    ## -- Attaching packages --------------------------------------------------------------------------------------- tidyverse 1.3.0 --
-
-    ## v ggplot2 3.3.2     v purrr   0.3.4
-    ## v tibble  3.0.1     v dplyr   1.0.0
-    ## v tidyr   1.1.0     v stringr 1.4.0
-    ## v readr   1.3.1     v forcats 0.5.0
-
-    ## -- Conflicts ------------------------------------------------------------------------------------------ tidyverse_conflicts() --
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
-
-    ## here() starts at C:/Users/jonmp/OneDrive/Documents/Projects/hopwithR
-
 Creating a dice starting with a vector of numbers (1:6)
 
 ``` r
@@ -60,7 +47,7 @@ what the arguments in a given function are i.e. args(round)
 sample(x = die, size = 2)
 ```
 
-    ## [1] 5 2
+    ## [1] 3 5
 
 ``` r
 args(sample)
@@ -95,7 +82,7 @@ The project creates at set of wieghted dice
 replicate(10, roll())
 ```
 
-    ##  [1]  8  5  4 11  5  6  6  9  8 11
+    ##  [1]  4  6  4  8 10  8  9  7  8  4
 
 ``` r
 rolls <- replicate(10000, roll())
